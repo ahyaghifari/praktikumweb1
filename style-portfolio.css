@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+body{
+    background-image: url('./images/bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.075);
+    background-blend-mode: darken;
+    animation: bganim 5s ease-in-out infinite;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.671);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: larger;
+    backdrop-filter: blur(2px);
+}
+
+header a:hover{
+    color: #f4a460;    
+}
+
+#home{
+    height: 100vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 3vw 12vh 3vw;
+}
+
+#home > h1{
+    width: 50%;
+    font-size: 50px;
+}
+
+#home > p{
+    width: 50%;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#works{
+    padding: 2vh 3vw;
+    background-color: rgba(0, 0, 0, 0.493);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+    box-shadow: 1px 1px 4px black;
+}
+
+#works .portofolios{
+    width: 45%;
+    margin-top: 2vh;
+    object-fit: cover;
+}
+
+#works h1{
+    padding: 2px;
+    font-size: 35px;
+    color: #f4a460;
+}
+
+#about{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#about > p{
+    margin-top: 3vh;
+}
+
+#profile{
+    padding: 3vh 3vw;
+    background-color: rgba(0, 0, 0, 0.493);
+    
+}
+
+#profile h1{
+    text-align: right;
+    font-size: 35px;
+    border-bottom: 1px dashed #f4a460;
+}
+
+.profile-image{
+    width: 30%;
+    margin-top: 5vh;
+}
+
+#profile-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#history{
+    margin-top: 5vh;
+}
+
+li{
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.profiles-title{
+    color: sandybrown;
+    margin-bottom: 2vh;
+    font-size: 25px;
+}
+
+#hobby{
+    margin-top: 5vh;
+    align-self: flex-end;
+    text-align: right;
+}
+
+#contact{
+    margin-top: 20vh;
+    height: 30vh;
+}
+#contact-container{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+@media (min-width: 768px) {
+
+    header a{
+        font-size: 30px;
+    }
+
+    #home > h1{
+        font-size: 60px;
+    }
+    #home > p{
+        width: 40%;
+        font-size: 30px;
+    }
+
+    #works .portofolios {
+    width: 35%;
+    }
+
+    #works h1{
+        font-size: 70px;
+    }
+
+    #about h1{
+        font-size: 60px;
+    }
+
+    #about p {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    #profile h1{
+        font-size: 50px;
+    }
+
+    .profiles-title{
+        font-size: 40px;
+    }
+
+    #history li, #hobby li{
+        font-size: 30px;
+    }
+
+    #contact a{
+        font-size: 30px;
+    }
+}
